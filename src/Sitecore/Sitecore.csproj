@@ -23,7 +23,6 @@
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
-    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -69,10 +68,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\WindowsAzure.Storage.4.3.0\lib\net40\Microsoft.WindowsAzure.Storage.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Newtonsoft.Json.5.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Kernel, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -124,16 +122,256 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Readme.txt" />
+    <Content Include="App_Data\debug\readme.txt" />
+    <Content Include="App_Data\diagnostics\readme.txt" />
+    <Content Include="App_Data\indexes\readme.txt" />
+    <Content Include="App_Data\license.xml" />
+    <Content Include="App_Data\logs\readme.txt" />
+    <Content Include="App_Data\packages\readme.txt" />
+    <Content Include="App_Data\Submit Queue\readme.txt" />
+    <Content Include="App_Data\viewstate\readme.txt" />
+    <Content Include="bin\ComponentArt.Web.UI.dll" />
+    <Content Include="bin\EcmaScript.NET.modified.dll" />
+    <Content Include="bin\HtmlAgilityPack.dll" />
+    <Content Include="bin\ITHit.WebDAV.Server.dll" />
+    <Content Include="bin\Lucene.Net.Contrib.Analyzers.dll" />
+    <Content Include="bin\Lucene.Net.Contrib.Core.dll" />
+    <Content Include="bin\Lucene.Net.Contrib.FastVectorHighlighter.dll" />
+    <Content Include="bin\Lucene.Net.Contrib.Highlighter.dll" />
+    <Content Include="bin\Lucene.Net.Contrib.Memory.dll" />
+    <Content Include="bin\Lucene.Net.Contrib.Queries.dll" />
+    <Content Include="bin\Lucene.Net.Contrib.Regex.dll" />
+    <Content Include="bin\Lucene.Net.Contrib.SimpleFacetedSearch.dll" />
+    <Content Include="bin\Lucene.Net.Contrib.Snowball.dll" />
+    <Content Include="bin\Lucene.Net.Contrib.SpellChecker.dll" />
+    <Content Include="bin\Lucene.Net.dll" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\MongoDB.Bson.dll" />
+    <Content Include="bin\MongoDB.Driver.dll" />
+    <Content Include="bin\Mvp.Xml.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\RadEditor.Net2.dll" />
+    <Content Include="bin\Sitecore.Abstractions.dll" />
+    <Content Include="bin\Sitecore.Analytics.Aggregation.dll" />
+    <Content Include="bin\Sitecore.Analytics.Automation.Aggregation.dll" />
+    <Content Include="bin\Sitecore.Analytics.Automation.dll" />
+    <Content Include="bin\Sitecore.Analytics.Automation.MongoDB.dll" />
+    <Content Include="bin\Sitecore.Analytics.Core.dll" />
+    <Content Include="bin\Sitecore.Analytics.DataAccess.dll" />
+    <Content Include="bin\Sitecore.Analytics.dll" />
+    <Content Include="bin\Sitecore.Analytics.Model.dll" />
+    <Content Include="bin\Sitecore.Analytics.MongoDB.dll" />
+    <Content Include="bin\Sitecore.Analytics.Processing.dll" />
+    <Content Include="bin\Sitecore.Analytics.RobotDetection.dll" />
+    <Content Include="bin\Sitecore.Analytics.Sql.dll" />
+    <Content Include="bin\Sitecore.Apps.Loader.dll" />
+    <Content Include="bin\Sitecore.Apps.TagInjection.dll" />
+    <Content Include="bin\Sitecore.Buckets.Client.dll" />
+    <Content Include="bin\Sitecore.Buckets.dll" />
+    <Content Include="bin\Sitecore.Cintel.Client.dll" />
+    <Content Include="bin\Sitecore.Cintel.dll" />
+    <Content Include="bin\Sitecore.Client.dll" />
+    <Content Include="bin\Sitecore.Cloud.Nexus.dll" />
+    <Content Include="bin\Sitecore.Cloud.RestClient.dll" />
+    <Content Include="bin\Sitecore.Cloud.ServiceModel.dll" />
+    <Content Include="bin\Sitecore.Cloud.Xdb.dll" />
+    <Content Include="bin\Sitecore.Cloud.Xdb.ServiceModel.dll" />
+    <Content Include="bin\Sitecore.ContentSearch.Analytics.Client.dll" />
+    <Content Include="bin\Sitecore.ContentSearch.Analytics.dll" />
+    <Content Include="bin\Sitecore.ContentSearch.Client.dll" />
+    <Content Include="bin\Sitecore.ContentSearch.dll" />
+    <Content Include="bin\Sitecore.ContentSearch.Linq.dll" />
+    <Content Include="bin\Sitecore.ContentSearch.Linq.Lucene.dll" />
+    <Content Include="bin\Sitecore.ContentSearch.LuceneProvider.dll" />
+    <Content Include="bin\Sitecore.ItemWebApi.dll" />
+    <Content Include="bin\Sitecore.Kernel.dll" />
+    <Content Include="bin\Sitecore.Logging.dll" />
+    <Content Include="bin\Sitecore.Mvc.Analytics.dll" />
+    <Content Include="bin\Sitecore.Mvc.DeviceSimulator.dll" />
+    <Content Include="bin\Sitecore.Mvc.dll" />
+    <Content Include="bin\Sitecore.Mvc.ExperienceEditor.dll" />
+    <Content Include="bin\sitecore.nexus.dll" />
+    <Content Include="bin\Sitecore.NVelocity.dll" />
+    <Content Include="bin\Sitecore.Oracle.dll" />
+    <Content Include="bin\Sitecore.Publishing.WebDeploy.dll" />
+    <Content Include="bin\Sitecore.Security.AntiCsrf.dll" />
+    <Content Include="bin\Sitecore.SegmentBuilder.dll" />
+    <Content Include="bin\Sitecore.Services.Client.dll" />
+    <Content Include="bin\Sitecore.Services.Core.dll" />
+    <Content Include="bin\Sitecore.Services.Infrastructure.dll" />
+    <Content Include="bin\Sitecore.Services.Infrastructure.Sitecore.dll" />
+    <Content Include="bin\Sitecore.SessionProvider.dll" />
+    <Content Include="bin\Sitecore.SessionProvider.Memory.dll" />
+    <Content Include="bin\Sitecore.SessionProvider.MongoDB.dll" />
+    <Content Include="bin\Sitecore.SessionProvider.Sql.dll" />
+    <Content Include="bin\Sitecore.Shell.MarketingAutomation.dll" />
+    <Content Include="bin\Sitecore.Speak.Applications.dll" />
+    <Content Include="bin\Sitecore.Speak.Charting.dll" />
+    <Content Include="bin\Sitecore.Speak.Client.dll" />
+    <Content Include="bin\Sitecore.Speak.ItemWebApi.dll" />
+    <Content Include="bin\Sitecore.Speak.Mvc.dll" />
+    <Content Include="bin\Sitecore.Speak.Web.dll" />
+    <Content Include="bin\Sitecore.Update.dll" />
+    <Content Include="bin\Sitecore.Zip.dll" />
+    <Content Include="bin\Stimulsoft.Base.dll" />
+    <Content Include="bin\Stimulsoft.Database.dll" />
+    <Content Include="bin\Stimulsoft.Report.dll" />
+    <Content Include="bin\Stimulsoft.Report.Web.dll" />
+    <Content Include="bin\Stimulsoft.Report.WebDesign.dll" />
+    <Content Include="bin\System.Net.Http.dll" />
+    <Content Include="bin\System.Net.Http.Formatting.dll" />
+    <Content Include="bin\System.Net.Http.WebRequest.dll" />
+    <Content Include="bin\System.Web.Cors.dll" />
+    <Content Include="bin\System.Web.Helpers.dll" />
+    <Content Include="bin\System.Web.Http.Cors.dll" />
+    <Content Include="bin\System.Web.Http.dll" />
+    <Content Include="bin\System.Web.Http.WebHost.dll" />
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Razor.dll" />
+    <Content Include="bin\System.Web.Webpages.Deployment.dll" />
+    <Content Include="bin\System.Web.Webpages.dll" />
+    <Content Include="bin\System.Web.Webpages.Razor.dll" />
+    <Content Include="bin\Telerik.Web.UI.dll" />
+    <Content Include="bin\Telerik.Web.UI.Skins.dll" />
+    <Content Include="bin\Yahoo.Yui.Compressor.dll" />
+    <Content Include="Default.aspx" />
+    <Content Include="default.css" />
+    <Content Include="default.js" />
+    <Content Include="Global.asax" />
+    <Content Include="layouts\QueryableRulesRunner.ascx" />
+    <Content Include="layouts\Sample Datasource Sublayout.ascx" />
+    <Content Include="layouts\Sample Inner Sublayout.ascx" />
+    <Content Include="layouts\Sample layout.aspx" />
+    <Content Include="layouts\Sample Sublayout.ascx" />
+    <Content Include="layouts\system\VIChecker.aspx" />
+    <Content Include="layouts\system\VisitorIdentification.ascx" />
+    <Content Include="layouts\system\VisitorIdentification.aspx" />
+    <Content Include="layouts\system\VisitorIdentification.js" />
+    <Content Include="layouts\system\VisitorIdentificationCss.aspx" />
+    <Content Include="layouts\xmlcontrol.aspx" />
+    <Content Include="sitecore modules\readme.txt" />
+    <Content Include="sitecore\admin\cache.aspx" />
+    <Content Include="sitecore\admin\dbbrowser.aspx" />
+    <Content Include="sitecore\admin\dbbrowser.css" />
+    <Content Include="sitecore\admin\FillDB.aspx" />
+    <Content Include="sitecore\admin\LinqScratchPad.aspx" />
+    <Content Include="sitecore\admin\Login.aspx" />
+    <Content Include="sitecore\admin\MediaHash.aspx" />
+    <Content Include="sitecore\admin\Packages\readme.txt" />
+    <Content Include="sitecore\admin\pipelines.aspx" />
+    <Content Include="sitecore\admin\RebuildReportingDB.aspx" />
+    <Content Include="sitecore\admin\RemoveBrokenLinks.aspx" />
+    <Content Include="sitecore\admin\restore.aspx" />
+    <Content Include="sitecore\admin\serialization.aspx" />
+    <Content Include="sitecore\admin\SetSACEndpoint.aspx" />
+    <Content Include="sitecore\admin\ShowConfig.aspx" />
+    <Content Include="sitecore\admin\SqlScripts\ItemGenerator.sql" />
+    <Content Include="sitecore\admin\stats.aspx" />
+    <Content Include="sitecore\admin\unlock_admin.aspx" />
+    <Content Include="sitecore\admin\UpdateInstallationWizard.aspx" />
+    <Content Include="sitecore\admin\Wizard\FixInstallationErrorsPage.ascx" />
+    <Content Include="sitecore\admin\Wizard\Images\bullet_square_blue.png" />
+    <Content Include="sitecore\admin\Wizard\Images\bullet_square_grey.png" />
+    <Content Include="sitecore\admin\Wizard\Images\bullet_square_red.png" />
+    <Content Include="sitecore\admin\Wizard\Images\bullet_square_yellow.png" />
+    <Content Include="sitecore\admin\Wizard\InstallationLog.ascx" />
+    <Content Include="sitecore\admin\Wizard\InstallationResult.ascx" />
+    <Content Include="sitecore\admin\Wizard\InstallUpdatePackage.aspx" />
+    <Content Include="sitecore\admin\Wizard\PickTaskWizardPage.ascx" />
+    <Content Include="sitecore\admin\Wizard\PreviewMetadataWizardPage.ascx" />
+    <Content Include="sitecore\admin\Wizard\ProcessUpdatePackage.ascx" />
+    <Content Include="sitecore\admin\Wizard\SelectPackageWizardPage.ascx" />
+    <Content Include="sitecore\admin\Wizard\UpdateInstallationWizard.css" />
+    <Content Include="sitecore\admin\Wizard\WelcomeWizardPage.ascx" />
+    <Content Include="temp\readme.txt" />
+    <Content Include="upload\readme.txt" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="webedit.css" />
+    <Content Include="xsl\sample rendering.xslt" />
+    <Content Include="xsl\system\WebEdit\Hidden Rendering.xslt" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Views\web.config" />
     <Content Include="packages.config" />
+    <Content Include="App_Browsers\Form.browser" />
+    <Content Include="App_Browsers\XamlPage.browser" />
+    <Content Include="App_Config\Commands.config" />
+    <Content Include="App_Config\ConnectionStrings.config" />
+    <Content Include="App_Config\ConnectionStringsOracle.config" />
+    <Content Include="App_Config\FieldTypes.config" />
+    <Content Include="App_Config\Icons.config" />
+    <Content Include="App_Config\Include\ExperienceProfile\Sitecore.ExperienceProfile.Client.config" />
+    <Content Include="App_Config\Include\ExperienceProfile\Sitecore.ExperienceProfile.config" />
+    <Content Include="App_Config\Include\ExperienceProfile\Sitecore.ExperienceProfile.Reporting.config" />
+    <Content Include="App_Config\Include\Sitecore.Analytics.Automation.TimeoutProcessing.config" />
+    <Content Include="App_Config\Include\Sitecore.Analytics.config" />
+    <Content Include="App_Config\Include\Sitecore.Analytics.ExcludeRobots.config" />
+    <Content Include="App_Config\Include\Sitecore.Analytics.Model.config" />
+    <Content Include="App_Config\Include\Sitecore.Analytics.MongoDb.config" />
+    <Content Include="App_Config\Include\Sitecore.Analytics.Processing.Aggregation.config" />
+    <Content Include="App_Config\Include\Sitecore.Analytics.Processing.Aggregation.ProcessingPools.config" />
+    <Content Include="App_Config\Include\Sitecore.Analytics.Processing.Aggregation.Services.config" />
+    <Content Include="App_Config\Include\Sitecore.Analytics.Processing.config" />
+    <Content Include="App_Config\Include\Sitecore.Analytics.Processing.Services.config" />
+    <Content Include="App_Config\Include\Sitecore.Analytics.Reporting.config" />
+    <Content Include="App_Config\Include\Sitecore.Analytics.Tracking.Aggregation.config" />
+    <Content Include="App_Config\Include\Sitecore.Analytics.Tracking.config" />
+    <Content Include="App_Config\Include\Sitecore.Analytics.Tracking.Database.config" />
+    <Content Include="App_Config\Include\Sitecore.Analytics.Tracking.RobotDetection.config" />
+    <Content Include="App_Config\Include\Sitecore.AntiCsrf.config" />
+    <Content Include="App_Config\Include\Sitecore.Apps.TagInjection.config" />
+    <Content Include="App_Config\Include\Sitecore.Buckets.config" />
+    <Content Include="App_Config\Include\Sitecore.ContentSearch.Analytics.config" />
+    <Content Include="App_Config\Include\Sitecore.ContentSearch.config" />
+    <Content Include="App_Config\Include\Sitecore.ContentSearch.DefaultConfigurations.config" />
+    <Content Include="App_Config\Include\Sitecore.ContentSearch.Lucene.DefaultIndexConfiguration.config" />
+    <Content Include="App_Config\Include\Sitecore.ContentSearch.Lucene.Index.Analytics.config" />
+    <Content Include="App_Config\Include\Sitecore.ContentSearch.Lucene.Index.Core.config" />
+    <Content Include="App_Config\Include\Sitecore.ContentSearch.Lucene.Index.Master.config" />
+    <Content Include="App_Config\Include\Sitecore.ContentSearch.Lucene.Index.Web.config" />
+    <Content Include="App_Config\Include\Sitecore.ItemWebApi.config" />
+    <Content Include="App_Config\Include\Sitecore.Media.RequestProtection.config" />
+    <Content Include="App_Config\Include\Sitecore.Mvc.config" />
+    <Content Include="App_Config\Include\Sitecore.MvcAnalytics.config" />
+    <Content Include="App_Config\Include\Sitecore.MvcExperienceEditor.config" />
+    <Content Include="App_Config\Include\Sitecore.MvcSimulator.config" />
+    <Content Include="App_Config\Include\Sitecore.SegmentBuilder.config" />
+    <Content Include="App_Config\Include\Sitecore.Services.Client.config" />
+    <Content Include="App_Config\Include\Sitecore.Shell.MarketingAutomation.config" />
+    <Content Include="App_Config\Include\Sitecore.Speak.Applications.config" />
+    <Content Include="App_Config\Include\Sitecore.Speak.config" />
+    <Content Include="App_Config\Include\Sitecore.Speak.ItemWebApi.config" />
+    <Content Include="App_Config\Include\Sitecore.Speak.Mvc.config" />
+    <Content Include="App_Config\Include\Sitecore.WebDAV.config" />
+    <Content Include="App_Config\LanguageDefinitions.config" />
+    <Content Include="App_Config\MimeTypes.config" />
+    <Content Include="App_Config\Portraits.config" />
+    <Content Include="App_Config\Prefetch\Common.config" />
+    <Content Include="App_Config\Prefetch\Core.config" />
+    <Content Include="App_Config\Prefetch\Master.config" />
+    <Content Include="App_Config\Prefetch\Webdb.config" />
+    <Content Include="App_Config\Prototypes.config" />
+    <Content Include="App_Config\Security\Domains.config" />
+    <Content Include="App_Config\Security\GlobalRoles.config" />
+    <Content Include="App_Config\XamlSharp.config" />
+    <Content Include="default.htm.sitedown" />
+    <Content Include="sitecore_files\Web.config" />
+    <Content Include="bin\ComponentArt.UIFramework.lic" />
+    <Content Include="sitecore\admin\Web.config" />
+    <Content Include="bin\Startup.cmd" />
+    <Content Include="App_Data\webdav.lic" />
+    <Content Include="..\Sitecore.Azure.Startup\App_Config\Include\Sitecore.Azure.Startup.config">
+      <Link>App_Config\Include\Sitecore.Azure.Startup.config</Link>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
       <SubType>Designer</SubType>
@@ -142,7 +380,13 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+    <Folder Include="sitecore modules\Shell\" />
+    <Folder Include="sitecore modules\Web\" />
+    <Folder Include="xsl\WebEdit\System\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Sitecore.Azure.Startup\Sitecore.Azure.Startup.csproj">
       <Project>{4f5250b1-352c-440c-a605-53560ef85b53}</Project>

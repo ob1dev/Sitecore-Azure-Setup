@@ -19,7 +19,11 @@
       <Setting name="core" />
       <Setting name="master" />
       <Setting name="web" />
+      <Setting name="reporting" />
+      <Setting name="session" />
       <Setting name="analytics" />
+      <Setting name="tracking.live" />
+      <Setting name="tracking.history" />
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
     </ConfigurationSettings>
     <Imports>

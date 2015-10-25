@@ -3,11 +3,15 @@
   <Role name="Sitecore">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="ConnectionStringNames" value="core, master, web, analytics" />
-      <Setting name="core" value="Server=tcp:{server-name}database.windows.net,1433;Database=Sitecore72_Core;User ID={server-admin-login}@{server-name};Password={password};Trusted_Connection=False;Encrypt=True;Connection Timeout=30" />
-      <Setting name="master" value="Server=tcp:{server-name}.database.windows.net,1433;Database=Sitecore72_Master;User ID={server-admin-login}@{server-name};Password={password};Trusted_Connection=False;Encrypt=True;Connection Timeout=30" />
-      <Setting name="web" value="Server=tcp:{server-name}.database.windows.net,1433;Database=Sitecore72_Web;User ID={server-admin-login}@{server-name};Password={password};Trusted_Connection=False;Encrypt=True;Connection Timeout=30" />
-      <Setting name="reporting" value="Server=tcp:{server-name}.database.windows.net,1433;Database=Sitecore72_Analytics;User ID={server-admin-login}@{server-name};Password={password};Trusted_Connection=False;Encrypt=True;Connection Timeout=30" />
+      <Setting name="ConnectionStringNames" value="core, master, web, reporting, session, analytics, tracking.live, tracking.history" />
+      <Setting name="core" value="Server=tcp:{server-name}.database.windows.net,1433;Database=Sitecore75_Core;User ID={server-admin-login}@{server-name};Password={password};Trusted_Connection=False;Encrypt=True;Connection Timeout=30" />
+      <Setting name="master" value="Server=tcp:{server-name}.database.windows.net,1433;Database=Sitecore75_Master;User ID={server-admin-login}@{server-name};Password={password};Trusted_Connection=False;Encrypt=True;Connection Timeout=30" />
+      <Setting name="web" value="Server=tcp:{server-name}.database.windows.net,1433;Database=Sitecore75_Web;User ID={server-admin-login}@{server-name};Password={password}Trusted_Connection=False;Encrypt=True;Connection Timeout=30" />
+      <Setting name="reporting" value="Server=tcp:{server-name}.database.windows.net,1433;Database=Sitecore75_Reporting;User ID={server-admin-login}@{server-name};Password={password};Trusted_Connection=False;Encrypt=True;Connection Timeout=30" />
+      <Setting name="session" value="Server=tcp:{server-name}.database.windows.net,1433;Database=Sitecore75_Sessions;User ID={server-admin-login}@{server-name};Password={password};Trusted_Connection=False;Encrypt=True;Connection Timeout=30" />
+      <Setting name="analytics" value="mongodb://{user-name}:{password}@{host}/sitecore_analytics" />
+      <Setting name="tracking.live" value="mongodb://{user-name}:{password}@{host}/sitecore_tracking_live" />
+      <Setting name="tracking.history" value="mongodb://{user-name}:{password}@{host}/sitecore_tracking_history" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="oburov" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCECt9mnBg4OasTOvG1LDjoiwwDQYJKoZIhvcNAQEBBQAEggEAG0BX/z/4RAdf/lA4TOkbf3JcWPC7rleO72fb6a7k8xLdUVGjc1eqaW8ippxJOAvn1lI7egOGX0mp3+FkxglXo5yNDvLLvj5jsoQT8IPadFYSOBvW4CvT8p+/gmiFoYl2Pjo75iDmhqTMnhfN3Bvj93tpq9gkeU4c5bu3kdPizLR0VlhLqPEVhbTS2ugehTWo+bpTTvGtSVPq8PksQV8ZNEYgbEiRPdEltcTahqzdpEfr+Nl0v83EXjDDpeNMu8+//ml3XjNX/GNJ2BPv8B6yvUsny04DQXTpzrXVbRjUVzi7/NhhIPDJrIpR6MAxD9Ak5VKQGqok3Yv7zUfSJKhCFDAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECLyDAKzPyVIUgBAf0wQ7CDEjn45NPoLVNdQB" />
