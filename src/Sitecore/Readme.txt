@@ -1,0 +1,1 @@
+﻿Include Sitecore's Website folder into this project. The content of the \Data folder must be placed into \Add_Data one.
