@@ -1,13 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Azure.Startup", "Sitecore.Azure.Startup\Sitecore.Azure.Startup.csproj", "{4F5250B1-352C-440C-A605-53560EF85B53}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore", "Sitecore\Sitecore.csproj", "{5409280A-AE87-449F-B4BC-D438C614FCCB}"
-EndProject
-Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "Sitecore.Azure", "Sitecore.Azure\Sitecore.Azure.ccproj", "{194A8B9D-7DBF-4251-9BFA-28C4DE8FA1C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +21,6 @@ Global
 		{5409280A-AE87-449F-B4BC-D438C614FCCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5409280A-AE87-449F-B4BC-D438C614FCCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5409280A-AE87-449F-B4BC-D438C614FCCB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{194A8B9D-7DBF-4251-9BFA-28C4DE8FA1C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{194A8B9D-7DBF-4251-9BFA-28C4DE8FA1C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{194A8B9D-7DBF-4251-9BFA-28C4DE8FA1C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{194A8B9D-7DBF-4251-9BFA-28C4DE8FA1C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
