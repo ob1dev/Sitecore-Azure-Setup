@@ -10,4 +10,5 @@ This repository contains an WebRole Entry Point that provides methods to run Sit
 
 ## Features:
 
++ Grand permission in the file system on a WebRole Instance;
 + Rebuild Search Indexes on very first start of a WebRole Instance.
