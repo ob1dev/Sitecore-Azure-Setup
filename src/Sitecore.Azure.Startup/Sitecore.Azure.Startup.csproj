@@ -34,13 +34,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.WindowsAzure.ServiceRuntime, Version=2.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="Sitecore.ContentSearch">
-      <HintPath>..\Sitecore\bin\Sitecore.ContentSearch.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\inetpub\wwwroot\sc81update1\Website\bin\Sitecore.ContentSearch.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Kernel">
-      <HintPath>..\Sitecore\bin\Sitecore.Kernel.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\inetpub\wwwroot\sc81update1\Website\bin\Sitecore.Kernel.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -59,7 +58,7 @@
     <Compile Include="SearchIndexRebuilding.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App_Config\Include\Sitecore.Azure.Startup.config">
+    <None Include="App_Config\Include\Sitecore.Azure.Setup.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
