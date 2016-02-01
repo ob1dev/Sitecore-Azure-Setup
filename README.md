@@ -5,8 +5,8 @@ This repository contains an WebRole Entry Point that provides methods to run Sit
 ## Preconfigured Items:
 
 + The App_Data directory with included Sitecore's `\Data` content;
-+ Patched the dataFolder variable that looks at the `\App_Data` directory;
-+ Patched the `<initialize>` pipeline for rebulding search indexes.
++ Patched the `dataFolder` variable that looks at the `\App_Data` directory;
++ Patched the `<initialize>` pipeline with a processor tp ebuld search indexes.
 
 ## Features:
 
