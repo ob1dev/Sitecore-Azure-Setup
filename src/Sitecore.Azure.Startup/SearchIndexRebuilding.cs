@@ -20,7 +20,6 @@ namespace Sitecore.Azure.Startup
     {
       List<Task> tasksList = new List<Task>();
 
-      RebuildSearchIndexesAsync(SearchManager.Indexes, tasksList);
       RebuildContentSearchIndexesAsync(ContentSearchManager.Indexes, tasksList);
 
       await Task.WhenAll(tasksList);
@@ -31,7 +30,6 @@ namespace Sitecore.Azure.Startup
     /// </summary>
     public static void RebuildAllIndexes()
     {
-      RebuildSearchIndexes(SearchManager.Indexes);
       RebuildContentSearchIndexes(ContentSearchManager.Indexes);
     }
     
