@@ -58,7 +58,7 @@
     <Compile Include="SearchIndexRebuilding.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App_Config\Include\Sitecore.Azure.Setup.config">
+    <None Include="App_Config\Include\Z.AzureWebApp\Sitecore.Azure.Setup.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
